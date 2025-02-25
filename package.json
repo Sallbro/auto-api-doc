@@ -1,0 +1,13 @@
+{
+  "name": "auto-api-doc",
+  "version": "1.0.0",
+  "description": "AUTO API DOC FOR FRAMEWORK EXPRESS, FASTIFY, AND KOA WITH SWAGGER UI",
+  "author": "sallbro-salman asu",
+  "license": "ISC",
+  "dependencies": {
+    "fs-extra": "^11.3.0",
+    "js-yaml": "^4.1.0",
+    "path": "^0.12.7",
+    "swagger-ui-express": "^5.0.1"
+  }
+}
