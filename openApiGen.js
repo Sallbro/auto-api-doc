@@ -36,7 +36,7 @@ function generateOpenAPISpec(framework, app, additional_info = {
     });
 
     return {
-        additional_info,
+        ...additional_info,
         paths
     };
 }

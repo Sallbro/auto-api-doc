@@ -14,12 +14,12 @@ Generate OpenAPI documentation for **Express, Koa, or Fastify** with one command
 
 ### ** Install Dependencies**  
 ```sh
-npm install auto-doc-api
+npm install @sallbro/auto-api-doc
 ```
 
 ### ** Generate Doc**  
 ```sh
-const { generateOpenAPISpec, writeOpenAPIFiles } = require("auto-doc-api");
+const { generateOpenAPISpec, writeOpenAPIFiles } = require("@sallbro/auto-api-doc");
 
 const openapiSpec = generateOpenAPISpec("express",app); // pass framework name and application route as a parameter
 writeOpenAPIFiles(openapiSpec, "./docs"); // generate doc file - .yaml and .json
@@ -28,7 +28,7 @@ writeOpenAPIFiles(openapiSpec, "./docs"); // generate doc file - .yaml and .json
 
 ### ** Setup swagger ui**  
 ```sh
-const { setupSwaggerUI } = require("auto-doc-api");
+const { setupSwaggerUI } = require("@sallbro/auto-api-doc");
 setupSwaggerUI(app, openapiSpec); // generate swagger ui at /api-docs/swagger-ui
 
 ```
@@ -36,7 +36,7 @@ setupSwaggerUI(app, openapiSpec); // generate swagger ui at /api-docs/swagger-ui
 ### ** express example**  
 ```sh
 const express = require("express");
-const { generateOpenAPISpec, writeOpenAPIFiles, setupSwaggerUI } = require("auto-doc-api");
+const { generateOpenAPISpec, writeOpenAPIFiles, setupSwaggerUI } = require("@sallbro/auto-api-doc");
 const app = express();
 
 const openapiSpec = generateOpenAPISpec("express",app); // pass framework name and application route as a parameter
@@ -48,7 +48,7 @@ setupSwaggerUI(app, openapiSpec); // generate swagger ui at /api-docs/swagger-ui
 ### ** fastify example**  
 ```sh
 const fastify  = require("fastify");
-const { generateOpenAPISpec, writeOpenAPIFiles, setupSwaggerUI } = require("auto-doc-api");
+const { generateOpenAPISpec, writeOpenAPIFiles, setupSwaggerUI } = require("@sallbro/auto-api-doc");
 const app = fastify();
 
 const openapiSpec = generateOpenAPISpec("express",app); // pass framework name and application route as a parameter
@@ -64,7 +64,7 @@ const Koa = require("koa");
 const Router = require("@koa/router");
 const app = new Koa();
 const router = new Router();
-const { generateOpenAPISpec, writeOpenAPIFiles, setupSwaggerUI } = require("auto-doc-api");
+const { generateOpenAPISpec, writeOpenAPIFiles, setupSwaggerUI } = require("@sallbro/auto-api-doc");
 
 const openapiSpec = generateOpenAPISpec("express",router); // pass framework name and application route as a parameter
 writeOpenAPIFiles(openapiSpec, "./docs"); // generate doc file - .yaml and .json
@@ -78,7 +78,7 @@ Generate Code from doc.yaml or doc.json file for **Express, Koa, or Fastify** wi
 
 ### ** Generate Code**  
 ```sh
-const { generateCodeFromOpenAPI } = require("auto-doc-api");
+const { generateCodeFromOpenAPI } = require("@sallbro/auto-api-doc");
 
 generateCodeFromOpenAPI("./docs/openapi.yaml", "./output","express");
 

@@ -1,13 +1,33 @@
 {
-  "name": "auto-api-doc",
+  "name": "@sallbro/auto-api-doc",
   "version": "1.0.0",
   "description": "AUTO API DOC FOR FRAMEWORK EXPRESS, FASTIFY, AND KOA WITH SWAGGER UI",
   "author": "sallbro-salman asu",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "fs-extra": "^11.3.0",
     "js-yaml": "^4.1.0",
     "path": "^0.12.7",
     "swagger-ui-express": "^5.0.1"
-  }
+  },
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "auto-api-doc-test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sallbro/auto-api-doc.git"
+  },
+  "keywords": [
+    "auto-api-doc",
+    "express",
+    "fastify",
+    "koa",
+    "swaggerUI"
+  ],
+  "bugs": {
+    "url": "https://github.com/Sallbro/auto-api-doc/issues"
+  },
+  "homepage": "https://github.com/Sallbro/auto-api-doc#readme"
 }
